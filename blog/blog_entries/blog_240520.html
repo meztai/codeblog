@@ -4,10 +4,77 @@
         <title>Hello World!</title>
     </head>
     <body>
-        <ul>
-            <li><a href="../home/index.html">Home</a></li>
-            <li><a href="../projects/project_home.html">Projects</a></li>
-            <li><a href="../blog/bloghome.html">Blog</a></li>
-        </ul>
+        <div>
+            <ul>
+                <li><a href="../../home/index.html">Home</a></li>
+                <li><a href="../../projects/project_home.html">Projects</a></li>
+                <li><a href="../../blog/bloghome.html">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>Blog</h1>
+        </div>
+        <div>
+            <h2>Hello World!</h2> <!-- all blog posts should follow this format -->
+            <h3>2024/05/20</h3>
+        </div>
+        <div>
+            <p><strong>The Beginning</strong></p>
+            <p>I first started to code when I was a child. Then I gave up. From time to time at school or on my own I would come accross websites like scratch or codecademy. At some point I even convinced my parents to buy me a book about python that sat unopened on my desk for a long time. Until finally I took a look at one page, did one problem, closed the book, then never opened it again. </p>
+            <p>Then during my first year in university I got an unpaid internship at startup doing copywriting for a blog. This involved getting familiar with HTML and a little bit of CSS. Eventually I left the internship, which was both unpaid and unorganized, for a job in my university library's Web Services department. I was there for the duration of my degree and then a little bit after.  </p>
+            <p><strong>CS50: Start!</strong></p>
+            <p>Today, I played around with scratch. I remember as a child I would play around with scratch for a little while and it would get too complicated for me to understand so I would give up rather quickly. 
+                As I’ve gotten older I’ve noticed I also have gotten more stubborn. 
+                So when I realized that this Cat Cafe Bakery game is going to be a lot more complicated than I thought I refused to back down. 
+                I also remembered what Professor Malan said about taking baby steps. So, instead of spending a long time getting frustrated, I just:</p>
+                <ul>
+                    <li>created the sprites</li>
+                    <li>animated the stiring motion of the bowl</li>
+                    <li>made the ingredient “sugar” a drag-able object and added the condition that if it touched the bowl, then it moved back one layer and triggers the stirring animation of the bowl. Then after a few seconds it goes back to its starting coordinates.</li>
+                </ul>   
+            <p>The code I have currently is probably not the best way to do this, but it will have to do for now, as I will just take baby steps to work on it. </p>
+            <p><strong>Webstie Building</strong></p> 
+            <p>I’m having a problem where when all files are in one parent folder, and I link to those files in a menu list using  &lt;a href=“”&gt;&lt;/a&gt;  then the link works. </p>
+            <p>However, if I organize the files into this folder structure:</p>
+            <blockquote>
+                <p>codeblog</p>
+                <ul>
+                    <li>home
+                        <ul>
+                            <li>index.html</li>
+                        </ul>
+                    </li>
+                    <li>projects
+                        <ul>
+                            <li>projectshome.html</li>
+                        </ul>
+                    </li>
+                    <li>blog
+                        <ul>
+                            <li>blog home
+                                <ul>
+                                    <li>bloghome.html</li>
+                                </ul>
+                            </li>
+                            <li>blog posts
+                                <ul>
+                                    <li>blogpostname.html</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </blockquote>
+            <p>then use their relative paths in the  &lt;a href=“”&gt;&lt;/a&gt; link for example:</p>
+            <blockquote>
+                <p>&lt;a href=“../Home/index.html”&gt;Home&lt;/a&gt;</p>
+                <p>&lt;a href=“../Projects/project_home.html”&gt;Projects&lt;/a&gt;</p>
+                <p>&lt;a href=“../Blog/Blog Home/blog_home.html”&gt;Blog&lt;/a&gt;</p>
+            </blockquote>
+            <p>I get an error when clicking the link. </p>
+            <p>I managed to fix it later by caching browsersync however the same thing was happening when going from a blog post page to the home page, but to fix that I just added another ../ to the home link when on the blog post page.</p>
+            <p>That's all for today. It's the 21st now, so I'm writing this with a fresh mind. I don't know if I'll work onm y scratch project today, but I should finish it by the end of the week. </p>
+            <p>logging off</p>
+        </div>
     </body>
 </html>
